@@ -23,7 +23,7 @@ public class Sketch extends PApplet {
    */
   public void draw() {
 	  
-	  // sample code, delete this stuff!!!
+	  // sample code, delete this stuff
     /*
     stroke(128);
     line(150, 25, 270, 350);  
