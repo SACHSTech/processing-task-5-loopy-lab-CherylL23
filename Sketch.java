@@ -170,15 +170,12 @@ public class Sketch extends PApplet {
   public void draw_section5(){
     int intX5 = 0;
     int intY5 = 0;
-    int rowCount5 = 0;
-    int columnCount5 = 0;
-    
 
     //filling the entire section with evenly spaced squares
-    for(int intRow5 = 30; rowCount5 < intRow5; intRow5--){
-      for(int intColumn5 = 30; columnCount5 < intColumn5 ; intColumn5--){
-        intX5 = 3 - 10 + intRow5 * 10;  
-        intY5 = 3 + intColumn5 * 10; 
+    for(int intRow = 0; intRow < 30; intRow++){
+      for(int intColumn = 0; intColumn < 30; intColumn--){
+        intX5 = 3 - 10 + intRow * 10;  
+        intY5 = 3 + intColumn * 10; 
 
         fill(255);
         noStroke();
