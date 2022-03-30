@@ -114,10 +114,7 @@ public class Sketch extends PApplet {
     }
   }
 
-  /**
-   * Use the modulus operator and an if/else statement to select the color.
-   * Don't use multiple 'if' statements.
-   */
+
   public void draw_section3(){
     int intX3 = 0;
     int intY3 = 0;
@@ -180,8 +177,8 @@ public class Sketch extends PApplet {
     //filling the entire section with evenly spaced squares
     for(int intRow5 = 30; rowCount5 < intRow5; intRow5--){
       for(int intColumn5 = 30; columnCount5 < intColumn5 ; intColumn5--){
-        intX5 = 3 - 10 + (intRow5 * 300 / 30);  
-        intY5 = 3 + (intColumn5 * 300 / 30); 
+        intX5 = 3 - 10 + intRow5 * 10;  
+        intY5 = 3 + intColumn5 * 10; 
 
         fill(255);
         noStroke();
