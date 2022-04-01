@@ -71,6 +71,7 @@ public class Sketch extends PApplet {
   /**
    * draws the bottom left section
    */
+
   public void draw_section1(){
     int intX = 0;
     int intY = 0;
@@ -93,6 +94,7 @@ public class Sketch extends PApplet {
    * Use the modulus operator and an if statement to select the color
    * Don't loop from 30 to 60 to shift everything over, just add 300 to x.
    */
+
   public void draw_section2(){
     int intX2 = 0;
     int intY2 = 0;
@@ -100,8 +102,8 @@ public class Sketch extends PApplet {
     //filling the entire section with evenly spaced squares
     for(int intRow = 0; intRow < 30; intRow++){
       for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX2 = 300 + 3 + intRow * 10;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY2 = 300 + 3 + intColumn * 10; //Instead of zero, calculate the proper intY location using 'intColumn'
+        intX2 = 300 + 3 + intRow * 10;  
+        intY2 = 300 + 3 + intColumn * 10; 
 
         if((intRow % 2) == 0){
           fill(255, 255, 255);
@@ -124,11 +126,11 @@ public class Sketch extends PApplet {
     //filling the entire section with evenly spaced squares
     for(int intRow = 0; intRow < 30; intRow++){
       for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX3 = 600 + 3 + intRow * 10;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY3 = 300 + 3 + intColumn * 10; //Instead of zero, calculate the proper intY location using 'intColumn'
+        intX3 = 600 + 3 + intRow * 10;  
+        intY3 = 300 + 3 + intColumn * 10; 
 
         if((intColumn % 2) == 0){
-           fill(0, 0, 0);
+          fill(0, 0, 0);
         }
         else {
          fill(255, 255, 255);
@@ -143,18 +145,20 @@ public class Sketch extends PApplet {
   /**
    * Use the modulus operator and just one 'if' statement to select the color.
    */
+
   public void draw_section4(){
    
     int intX4 = 0;
     int intY4 = 0;
     
+    //black and white square pattern
     for(int intRow = 0; intRow < 30; intRow++){
       for(int intColumn = 0; intColumn < 30; intColumn++){
-        intX4 = 900 + 3 + intRow * 10;  //Instead of zero, calculate the proper intX location using 'intRow'
-        intY4 = 300 + 3 + intColumn * 10; //Instead of zero, calculate the proper intY location using 'intColumn'
+        intX4 = 900 + 3 + intRow * 10; 
+        intY4 = 300 + 3 + intColumn * 10; 
 
         if((intColumn % 2) != 0 && (intRow % 2) == 0){
-           fill(255, 255, 255);
+          fill(255, 255, 255);
         }
         else {
          fill(0, 0, 0);
@@ -169,11 +173,12 @@ public class Sketch extends PApplet {
   /**
    * Do NOT use 'if' statements to complete 5-8. Manipulate the loops instead
    */
+
   public void draw_section5(){
     int intX5 = 0;
     int intY5 = 0;
 
-      //filling the e
+     //triangle with the straight lines facing right 
      for(int intRow5 = 0; intRow5 < 30; intRow5++){
       for(int intColumn5 = 30 - intRow5; intColumn5 < 30; intColumn5++){
         intX5 = 3 + intRow5 * 10;  
@@ -190,6 +195,8 @@ public class Sketch extends PApplet {
   public void draw_section6(){
       int intX6 = 0;
       int intY6 = 0;
+
+      //triangle with the straight lines facing left
       for(int intRow6 = 0; intRow6 < 30; intRow6++){
         for(int intColumn6 = intRow6; intColumn6 < 30; intColumn6++){
         
@@ -208,6 +215,8 @@ public class Sketch extends PApplet {
   public void draw_section7(){
     int intX7 = 0;
     int intY7 = 0;
+    
+    //upside down triangle with the straight lines facing left
     for(int intRow7 = 0; intRow7 < 30; intRow7++){
       for(int intColumn7 = 30 - intRow7; intColumn7 > 0; intColumn7--){
       
@@ -224,6 +233,8 @@ public class Sketch extends PApplet {
   public void draw_section8(){
     int intX8 = 0;
     int intY8 = 0;
+    
+    //upside down triangle with the straight lines facing right
     for(int intRow8 = 0; intRow8 < 30; intRow8++){
       for(int intColumn8 = 0; intColumn8 <= intRow8; intColumn8++){
       
@@ -237,9 +248,4 @@ public class Sketch extends PApplet {
   
     }
   }
-
-
-
-
-
 }
