@@ -200,7 +200,7 @@ public class Sketch extends PApplet {
       for(int intRow6 = 0; intRow6 < 30; intRow6++){
         for(int intColumn6 = intRow6; intColumn6 < 30; intColumn6++){
         
-          intX6 = 300+ 3 + intRow6 * 10;  
+          intX6 = 300 + 3 + intRow6 * 10;  
           intY6 = 3 + intColumn6 * 10; 
 
           fill(255);
